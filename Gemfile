@@ -10,6 +10,8 @@ gem "jbuilder", "~> 2.0"
 gem "sdoc", "~> 0.4.0", group: :doc
 
 group :development, :test do
+  gem "rspec-rails", "~> 2.14"
+  gem "shoulda-matchers"
   gem "sqlite3"
   gem "byebug"
 end
@@ -20,7 +22,6 @@ group :development do
 end
 
 group :test do
-  gem "rspec-rails", "~> 2.14"
   gem "factory_girl_rails"
   gem "ffaker"
 end
@@ -30,4 +31,11 @@ group :production do
   gem "rails_12factor", "0.0.2"
   gem "puma", "2.11.1"
 end
+
+gem "devise"
+gem "sabisu_rails", github: "IcaliaLabs/sabisu-rails"
+gem "compass-rails"
+gem "furatto"
+gem "font-awesome-rails"
+gem "simple_form"
 
