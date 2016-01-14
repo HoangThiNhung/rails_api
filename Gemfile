@@ -10,8 +10,10 @@ gem "jbuilder", "~> 2.0"
 gem "sdoc", "~> 0.4.0", group: :doc
 
 group :development, :test do
-  gem "rspec-rails", "~> 2.14"
+  gem "rspec-rails", "~> 3.1"
   gem "shoulda-matchers"
+  gem "factory_girl_rails"
+  gem "ffaker"
   gem "sqlite3"
   gem "byebug"
 end
@@ -19,11 +21,6 @@ end
 group :development do
   gem "web-console", "~> 2.0"
   gem "spring"
-end
-
-group :test do
-  gem "factory_girl_rails"
-  gem "ffaker"
 end
 
 group :production do
