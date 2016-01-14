@@ -4,7 +4,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :title
       t.decimal :price
       t.boolean :published
-      t.integer :user_id
+      t.references :user
 
       t.timestamps null: false
     end
